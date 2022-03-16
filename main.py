@@ -3,11 +3,7 @@ import discord
 import random
 import time
 from discord.ext import commands
-from verse import *
-from pronouns import *
-from lyrics import *
 from cogs import *
-from generateartists import generate_artistfiles
 
 #
 # TODO: file launching/closing commands through the bot to host?
