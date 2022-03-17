@@ -51,16 +51,16 @@ def generate_artistfiles():
         logger.info('\n----------\n')
 
         # check if an artist file already exists
-        if exists(f'./output/{artist}.txt'):
+        if exists(f'./output/artists/{artist}.txt'):
             # if an artist file is empty allow it to be filled
-            if (os.stat(f'output/{artist}.txt').st_size == 0):
+            if (os.stat(f'output/artists/{artist}.txt').st_size == 0):
                 logger.info(f'\n\n {artist}.txt was empty, recreating \n') 
             # otherwise log it exists and move on
             else:
                 logger.info(f'--- {artist}.txt Exists ---')
                 continue
 
-        artistfile = open(f'./output/{artist}.txt', 'w')
+        artistfile = open(f'./output/artists/{artist}.txt', 'w')
         try: 
             logger.info(f'Searching for top songs for {artist}')
             # get top songs and write full lyrics to files

@@ -41,7 +41,7 @@ def choose_chorus():
     artist = random.choice(artists)
 
     # open artist lyrics file generated from get_artists()
-    lyric_file = open(f'./output/{artist}.txt', 'r')
+    lyric_file = open(f'./output/artists/{artist}.txt', 'r')
 
     # get indices of lines where '[Chorus' appears
     indices = []
