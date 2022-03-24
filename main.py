@@ -1,8 +1,10 @@
 import os
-import discord
 import random
 import time
+
+import discord
 from discord.ext import commands
+
 from cogs import *
 
 #
@@ -44,7 +46,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == bot.user:
         return
-    
+ 
     # joke response
     if 'gabagool' in  message.content.lower():
         await message.channel.send('*gabagool*')
